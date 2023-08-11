@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/edee7ad215.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fa-solid fa-caret-up"></i>
+    </div>
+<div id="header">
+         <nav class="navbar"> 
+              <div class="up-icons">
+              <a href="https://www.linkedin.com/in/kaushlendra-upadhyay-2bb39224a" ><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/kaushlendraU"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/upadhyayrisu/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             <ul id="subMenu" class="open-menu">
+                 <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                  <i id="s" class="fa-solid fa-xmark" onclick="closemenu()"></i>                 
+             </ul>
+         </nav>
+          <div class="container">        
+         <div class="header-text">
+             <h1>Hi, I'm <span>Kaushlendra</span><br>Upadhyay</h1>
+             <p>A Web <span class="typing"></span></p>
+         </div>
+     </div>         
+ </div>
+ 
+ <!-- ----------about---------- -->
+ 
+ <div id="about">
+     <div class="cantainer">
+             <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                 <p>Hi, I am Kaushalendra Upadhyay, I am in third year, fifth semester of my bachelor's degree.  i am proficient in html css also know about c++,pythan & in the middle of learning java script. I want to be a full time web developer and i would also like to learn game development and animation designing.</p>
+                 
+                 <div class="tab-title">
+                     <p class="tab-links active-link" onclick="opentab('overskills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 
+                 <div class="tab-contents active-tab" id="overskills">
+                     <ul>
+                         <li><span>Web Development</span><br> 
+                         Developing Web Pages</li>
+                         <li><span>Young Professional</span><br> 
+                         Communication Skills │ Presentation 
+                         Skills│ Soft Skills │ Career Guidance 
+                         Framework │ Resume Writing
+                         │ Group Discussion Skills│ Interview     
+                         Skills │ Business Etiquette │ Effective 
+                         Email Writing │ Telephone Etiquette │ 
+                         Accounting Fundamentals │ IT 
+                         Foundational Skills │ Overview of 
+                         Artificial.</li>
+                         <li><span>Digital Marketing</span><br>
+                         Basic Fundamentals of Digital Marketing 
+                         Certified by United Latino Students 
+                         Association.
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                     <ul>
+                         <li><span>2023 - current</span><br> 
+                         Responsive Web Developer certified by 
+                         Free code camp.</li>
+                         <li><span>2021-2022</span><br>Completed 
+                         1st and 2nd year of Bachelor's degree in 
+                         Computer Application and also trained my 
+                         web development skills at M.L.K PG 
+                         College.
+                         </li>
+                         <li><span>2020 - 2021</span><br>I 
+                         started my 12th in 2020 and passed in 
+                         2021 with 73%.
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                     <ul>
+                         <li><span>2019</span><br>Completed my 
+                         10th from Balrampur Modern Inter College 
+                         with 73.16%.
+                         </li>
+                            <li><span>2021</span><br>Completed my 
+                         12th from Balrampur Modern Inter College 
+                         with 73%. 
+                            </li>
+                            <li><span>2021</span><br>Started my 
+                            Bachelor's degree in Computer 
+                            Application and now I'm in 3rd year
+                         </li>
+                     </ul>
+                 </div>
+                 
+             </div>
+     </div>
+ </div>
+ 
+ <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left column-left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>I am good at web development and also know how to design the interface of a web, I have 4 to 5 months of experience in web development, made 8 to 10 projects by myself certified by free code camp and also know how to use canva,i made lot's of photos,banners,thumbnails etc.</p>                                      
+                </div>
+                <div class="column right column-right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C++</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Pythan</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line pythan"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+ <!-- -----------------Services------------------- -->
+ 
+ <div id="services">
+     <h1 class="sub-title">My Services</h1>
+     <div class="services-list">
+          <div>
+           <i class="fa-solid fa-file-code"></i>
+             <h2>Web Design</h2>
+             <p>I have 4 months of experience in web designing, I designed more then 8 to 10 Web Pages.</p>
+             <a href="https://github.com/kaushlendraU?tab=repositories">lern more</a>
+         </div>
+          <div>            
+             <i class="fa-solid fa-pen-to-square"></i>
+             <h2>Video Editing</h2>
+             <p>I have 1 year of experience in Video editing, I edited lot's of Videos for my YouTube Channel but for my personal reasons i have to quit.</p>
+             <a href=" https://m.youtube.com/channel/UCiCdw6z2iuKwhCtMw-8kvQA">lern more</a>
+          </div>
+          <div>
+             <i class="fa-brands fa-canadian-maple-leaf"></i>
+             <h2>Canva</h2>
+             <p>I have 1 year of experience, I made banners, edited photos, written resume for myself.</p>
+             <a href="https://drive.google.com/drive/folders/1AoRlpVHqTDnCGkZ0uZLbalxg32veZaqd">
+ lern more</a>
+         </div>
+     </div>
+ </div>
+ 
+ <!-- ----------------Portfolio------------------- -->
+ 
+ 
+ <div id="portfolio">
+     <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+             <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUH46izwphG2eWhqyegeWYZXAYDwzmGRkOAA&usqp=CAU">
+                <div class="layer">
+                   <h3>Magazine</h3>
+                   <p>This is a assignment that was given to me by free code camp, it's a Magazine about the change on curriculum in free code camp.</p> 
+                   <a href="https://kaushlendrau.github.io/free_code_camp_magazine/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+              <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuJDx9hQ3eN7YcUaBuC7L_-VxLA0rtk56Kw&usqp=CAU">
+                <div class="layer">
+                   <h3>Tribute Page</h3>
+                   <p>Ajad Bhagat Singh man who sacrificed himself for people of India without a single thought, the man who gave us freedom.</p> 
+                   <a href="https://kaushlendrau.github.io/tribute_page/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+              <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcE4XLhk0RzxkjclohwnLFKUNEwNK2Yq5JxA&usqp=CAU">
+                <div class="layer">
+                   <h3>JS Documentation Page</h3>
+                   <p>Documentation page about java script, It's a page about JS Basics.</p> 
+                   <a href="https://kaushlendrau.github.io/Java_documentation/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+         </div>
+         <a href="https://github.com/kaushlendraU?tab=repositories" class="btn I">See More</a>
+     </div>
+ </div>
+ 
+ <!-- -----------------contact----------------- -->
+ 
+ <div id="contact">
+     <div class="container">
+         <div class="row">
+             <div class="contact-me">
+                 <h1 class="sub-title"> Contact Me</h1>
+                 <div class="details">
+                     <i class="fa-solid fa-user"></i>
+                     <div class="info">
+                         <div class="head">Name</div>
+                     <div class="head-title">Kaushalendra Upadhyay</div>
+                     </div>
+                  </div>  
+                  <div class="details">
+                     <i class="fa-solid fa-location-dot"></i>
+                     <div class="info">
+                         <div class="head">Address</div>
+                     <div class="head-title">Uttar pradesh, Balrampur, Tusipark, 271201</div>
+                     </div>
+                    </div> 
+                    <div class="details">
+                 <i class="fa-solid fa-envelope"></i>
+                 <div class="info">
+                     <div class="head">Email</div>
+                 <div class="head-title"><a href="mailto: harrysaam6@gmail.com">harrysaam6@gmail.com</a></div>
+                      </div>            
+                  </div>    
+                                        
+                <div class="social-icons">
+<a href="tel:8542959512"><i class="fa-solid fa-mobile-alt"></i></a>                 
+ <a href="https://twitter.com/HarryOsgord"><i class="fab fa-twitter"></i></a>
+ <a href="https://m.facebook.com/harry.saam.790"><i class="fab fa-facebook"></i></a>
+                </div>
+<a href="https://drive.google.com/file/d/1DQstrmsra1gHHgR9RPKYgaQCksQySRNH/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+             </div>
+             <div class="feedback">
+                 <form name="submit-to-google-sheet" onclick="closemenu()">
+                     <input type="text" name="Name" placeholder="Your Name" required/>
+                     <input type="email" name="Email" placeholder="Your Email" required />
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" id="button" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+             </div>
+         </div>
+     </div>
+     <div class="copyright">
+         <p>©2023 created by Kaushlendra Upadhyay</p>
+     </div>
+ </div>
+ 
+ <script>
+     
+    var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents"); 
+     
+     function opentab(tabname){
+     
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+ 
+    }
+    
+</script>    
+     
+<script>
+    
+    var sidemeu = document.getElementById("subMenu");    
+    
+    function openmenu(){
+        sidemeu.style.top = "0";
+    }
+    function closemenu(){
+        sidemeu.style.top = "-300px";
+    }
+    
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwKRYOFK9cKcgTOU2QahJsOEQmoXatAH1Ce2Hw-S4BsJXCdSBBR9CDgAOqIoG_rMWUm/exec'
+  const form = document.forms['submit-to-google-sheet']
+  
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+              msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="script.js"></script>
+
+</body>    
+</html>
+    
